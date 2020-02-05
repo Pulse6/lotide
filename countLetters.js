@@ -13,7 +13,7 @@ const assertEqual = function (actual, expected) {
 
 const countLetters = function (str) {
   const noSpace = str.split(" ").join("");
-  console.log(noSpace)
+  // console.log(noSpace)
   const result = {};
   for (const item of noSpace) {
     // console.log(item);
