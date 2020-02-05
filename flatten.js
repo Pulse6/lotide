@@ -24,9 +24,9 @@ const eqArrays = function(arr1, arr2) {
 // assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true) // => true
 // assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false) // => false
 
-const flatten = function(arr){
-  let newArr = arr.flat()
+const flatten = function (arr){
+  let newArr = arr.flat();
   return newArr;
-}
+};
 
 // console.log(flatten([1, 2, [3, 4], 5, [6]])) // => [1, 2, 3, 4, 5, 6]
