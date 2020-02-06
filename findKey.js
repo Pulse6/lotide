@@ -6,14 +6,22 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-const findKey = function (obj, cb) {
-  // console.log(Object.values(obj))
-  // console.log(obj)
-  for (let key in obj) {
-    // console.log(obj[key])
-    if (cb(obj[key])) {
-      console.log(key);
-      break;
+// const findKey = function (obj, cb) {
+//   // console.log(Object.values(obj))
+//   // console.log(obj)
+//   for (let key in obj) {
+//     // console.log(obj[key])
+//     if (cb(obj[key])) {
+//       console.log(key);
+//       break;
+//     }
+//   }
+// };
+
+const findKey = function(obj, cb) {
+  for (let [key, value] of Object.entries(obj)) {
+    if (cb(value)) {
+      return key;
     }
   }
 };
