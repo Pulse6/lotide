@@ -1,9 +1,5 @@
 // index.js
-const head = require('./head');
-const tail = require('./tail');
-const middle = require('./middle');
-
-module.exports = { head, tail, middle };
+// const _ = require('./index'); this is how to use it
 
 const head = require('./head');
 const tail = require('./tail');
@@ -42,4 +38,3 @@ module.exports = {
   takeUntil,
   without
 };
-
