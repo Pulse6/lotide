@@ -25,8 +25,9 @@ const eqArrays = function(arr1, arr2) {
 // assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false) // => false
 
 const without = function(arr1, arr2) {
-  let result = arr1.filter(element => !arr2.includes(element));
+  let result = arr1.filter(arr1 => !arr2.includes(arr1));
   return result;
 };
 
-// console.log(without([1, 2, 3], [1]));
+console.log(without([1, 2, 3], [1]));
+console.log(without(["1", "2", "3"], [1, 2, "3"]));

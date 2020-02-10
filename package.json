@@ -1,0 +1,28 @@
+{
+  "name": "@marco698698/lotide",
+  "version": "1.0.0",
+  "description": "A mini clone of the [Lodash](https://lodash.com) library.",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^4.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^7.0.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pulse6/lotide.git"
+  },
+  "author": "Marco Siu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pulse6/lotide/issues"
+  },
+  "homepage": "https://github.com/Pulse6/lotide#readme"
+}

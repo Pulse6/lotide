@@ -27,9 +27,11 @@ const eqArrays = function(arr1, arr2) {
 const assertArraysEqual = function(arr1, arr2) {
   if (eqArrays(arr1, arr2)) {
     console.log("✅✅✅");
+    return true;
   } else {
     console.log("🛑🛑🛑");
+    return false;
   }
 };
-
+module.exports = assertArraysEqual;
 // assertArraysEqual([1, 2, 3], [1, 2, 3]);

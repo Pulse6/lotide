@@ -2,12 +2,12 @@
 // assertEqual("Lighthouse Labs", "Bootcamp");
 // assertEqual(1, 1);
 
-const eqArrays = function(arr1, arr2) {
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) return false;
-  }
-  return true;
-};
+// const eqArrays = function(arr1, arr2) {
+//   for (let i = 0; i < arr1.length; i++) {
+//     if (arr1[i] !== arr2[i]) return false;
+//   }
+//   return true;
+// };
 
 // assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true) // => true
 // assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false)// => false
@@ -15,15 +15,18 @@ const eqArrays = function(arr1, arr2) {
 // assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true) // => true
 // assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false) // => false
 
-const assertArraysEqual = function(arr1, arr2) {
-  if (eqArrays(arr1, arr2)) {
-    console.log("✅✅✅");
-  } else {
-    console.log("🛑🛑🛑");
-  }
-};
+// const assertArraysEqual = function(arr1, arr2) {
+//   if (eqArrays(arr1, arr2)) {
+//     console.log("✅✅✅");
+//   } else {
+//     console.log("🛑🛑🛑");
+//   }
+// };
 
 // assertArraysEqual([1, 2, 3], [1, 2, 3]);
+
+const eqArrays = require('./eqArrays')
+const assertArraysEqual = require('./assertArraysEqual')
 
 const middle = function(arr) {
   let mid = [];
@@ -37,5 +40,7 @@ const middle = function(arr) {
   }
   return mid;
 };
+
+module.exports = middle;
 
 // console.log(middle([1, 2, 3, 4]));
