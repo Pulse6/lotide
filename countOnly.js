@@ -33,20 +33,22 @@ const countOnly = function(allItems, itemsToCount) {
   return results;
 };
 
-const firstNames = [
-  "Karl",
-  "Salima",
-  "Agouhanna",
-  "Fang",
-  "Kavith",
-  "Jason",
-  "Salima",
-  "Fang",
-  "Joe",
-  "Jason"
-];
+module.exports = countOnly;
 
-const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true });
+// const firstNames = [
+//   "Karl",
+//   "Salima",
+//   "Agouhanna",
+//   "Fang",
+//   "Kavith",
+//   "Jason",
+//   "Salima",
+//   "Fang",
+//   "Joe",
+//   "Jason"
+// ];
+
+// const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true });
 
 // assertEqual(result1["Jason"], 1);
 // assertEqual(result1["Karima"], undefined);
