@@ -25,8 +25,8 @@
 
 // assertArraysEqual([1, 2, 3], [1, 2, 3]);
 
-const eqArrays = require('./eqArrays')
-const assertArraysEqual = require('./assertArraysEqual')
+const eqArrays = require('./eqArrays');
+const assertArraysEqual = require('./assertArraysEqual');
 
 const middle = function(arr) {
   let mid = [];
